@@ -45,6 +45,9 @@
     <ClCompile Include="Present.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
+    <ClCompile Include="House.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\3rdPartyLibs\bin\libsndfile-1.dll">
@@ -105,6 +108,9 @@
     </ClInclude>
     <ClInclude Include="EntityManager.h">
       <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="House.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

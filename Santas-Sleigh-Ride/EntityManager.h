@@ -5,6 +5,10 @@
 
 #include "Entity.h"
 
+extern int score;
+extern int houseCount;
+extern int bullets;
+
 class EntityManager
 {
 public:
@@ -29,6 +33,26 @@ public:
 		{
 			if (iterator.second->Active())
 			{
+				if (iterator.second->Group() == 3)
+				{
+					for (auto& iterator2 : this->entities)
+					{
+						if (iterator2.second->Active())
+						{
+							if (iterator2.second->Group() == 2)
+							{
+								if (iterator.second->collision(iterator2.second))
+								{
+									toRemove.push_back(iterator.first);
+									toRemove.push_back(iterator2.first);
+									houseCount -= 1;
+									bullets -= 1;
+									score += 1;
+								}
+							}
+						}
+					}
+				}
 				iterator.second->Update();
 			}
 			else
@@ -39,9 +63,10 @@ public:
 
 		while (toRemove.size() > 0)
 		{
-			this->entities.erase(toRemove[0]);
+			this->entities.erase(toRemove[toRemove.size() - 1]);
 			toRemove.pop_back();
 		}
+		toRemove.clear();
 	}
 
 	void Render(sf::RenderWindow* window)

@@ -30,9 +30,19 @@ public:
 		this->setTexture(*this->texture);
 	}
 
+	bool collision(Entity* entity)
+	{
+		return (this->getGlobalBounds().intersects(entity->getGlobalBounds()));
+	}
+
 	int Active()
 	{
 		return this->active;
+	}
+
+	int Group()
+	{
+		return this->group_id;
 	}
 
 	virtual void Update()
@@ -49,6 +59,7 @@ public:
 	}
 protected:
 	int active;
+	int group_id;
 private:
 	sf::Texture* texture;
 };

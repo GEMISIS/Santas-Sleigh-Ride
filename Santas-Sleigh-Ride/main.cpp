@@ -6,6 +6,8 @@ bool exitGame = false;
 
 int main()
 {
+	srand(NULL);
+
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Santa's Sleigh Ride");
 
 	coreState = new game_state(&window);

@@ -68,6 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="House.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_menu.cpp" />
     <ClCompile Include="main_game.cpp" />
@@ -92,6 +93,7 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityManager.h" />
     <ClInclude Include="game_state.h" />
+    <ClInclude Include="House.h" />
     <ClInclude Include="main_menu.h" />
     <ClInclude Include="main_game.h" />
     <ClInclude Include="Present.h" />

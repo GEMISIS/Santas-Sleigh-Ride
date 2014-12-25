@@ -2,6 +2,8 @@
 
 #include "Entity.h"
 
+extern int bullets;
+
 class Santa : public Entity
 {
 public:
