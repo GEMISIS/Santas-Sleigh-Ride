@@ -41,6 +41,15 @@ public:
 		}
 	}
 
+	void Update()
+	{
+		if (this->state != NULL)
+		{
+			this->state->Update(this->window);
+			this->state->Render(this->window);
+		}
+	}
+
 	~game_state()
 	{
 		if (this->state != NULL)
@@ -53,4 +62,4 @@ private:
 	sf::RenderWindow* window;
 };
 
-extern game_state* state;
+extern game_state* coreState;

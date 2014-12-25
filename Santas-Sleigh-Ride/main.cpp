@@ -1,10 +1,12 @@
 #include "game_state.h"
 
-game_state* state;
+game_state* coreState;
 
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Santa's Sleigh Ride");
+
+	coreState = new game_state(&window);
 
 	while (window.isOpen())
 	{
@@ -14,6 +16,8 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
+
+		coreState->Update();
 	}
 
 	return 0;
