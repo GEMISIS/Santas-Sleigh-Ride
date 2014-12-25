@@ -1,3 +1,5 @@
+#pragma once
+
 #include "game_state.h"
 
 class main_menu : public tiny_state

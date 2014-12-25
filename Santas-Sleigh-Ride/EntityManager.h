@@ -6,6 +6,7 @@
 #include "Entity.h"
 
 extern int score;
+extern int lives;
 extern int houseCount;
 extern int bullets;
 
@@ -50,6 +51,20 @@ public:
 									score += 1;
 								}
 							}
+							if (iterator2.second->Group() == 1)
+							{
+								if (iterator.second->collision(iterator2.second))
+								{
+									Entity* santa = iterator2.second;
+									santa->setPosition(0, 0);
+									this->Reset();
+									this->AddEntity("Santa", santa);
+									bullets = 0;
+									houseCount = 0;
+									lives -= 1;
+									return;
+								}
+							}
 						}
 					}
 				}
@@ -67,6 +82,12 @@ public:
 			toRemove.pop_back();
 		}
 		toRemove.clear();
+	}
+
+	void Reset()
+	{
+		this->entities.clear();
+		this->toRemove.clear();
 	}
 
 	void Render(sf::RenderWindow* window)

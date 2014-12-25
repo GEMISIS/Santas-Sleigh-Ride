@@ -48,6 +48,9 @@
     <ClCompile Include="House.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
+    <ClCompile Include="game_over.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\3rdPartyLibs\bin\libsndfile-1.dll">
@@ -111,6 +114,9 @@
     </ClInclude>
     <ClInclude Include="House.h">
       <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="game_over.h">
+      <Filter>Header Files\States</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
