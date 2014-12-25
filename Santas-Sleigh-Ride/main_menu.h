@@ -10,5 +10,14 @@ public:
 private:
 	sf::Text* titleTop;
 	sf::Text* titleBottom;
+
+	sf::Text* play;
+	sf::Text* quit;
+
+	float grow, scaleSize;
+
+	int selected;
+
+	bool upKey, downKey;
 };
 

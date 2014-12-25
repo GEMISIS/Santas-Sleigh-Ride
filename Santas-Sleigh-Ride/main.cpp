@@ -2,6 +2,7 @@
 #include "main_menu.h"
 
 game_state* coreState;
+bool exitGame = false;
 
 int main()
 {
@@ -20,6 +21,11 @@ int main()
 		}
 
 		window.clear(sf::Color::Black);
+
+		if (exitGame)
+		{
+			window.close();
+		}
 
 		coreState->Update();
 

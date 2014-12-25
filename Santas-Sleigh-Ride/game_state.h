@@ -63,3 +63,4 @@ private:
 };
 
 extern game_state* coreState;
+extern bool exitGame;
