@@ -1,6 +1,6 @@
 #include "game_state.h"
 
-class test_state : public tiny_state
+class main_menu : public tiny_state
 {
 public:
 	void Initialize(sf::RenderWindow* window);
@@ -8,5 +8,7 @@ public:
 	void Render(sf::RenderWindow* window);
 	void Destroy(sf::RenderWindow* window);
 private:
+	sf::Text* titleTop;
+	sf::Text* titleBottom;
 };
 

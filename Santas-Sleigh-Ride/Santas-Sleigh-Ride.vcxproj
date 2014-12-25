@@ -69,7 +69,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="test_state.cpp" />
+    <ClCompile Include="main_menu.cpp" />
     <ClCompile Include="test_state2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -87,8 +87,9 @@
     <None Include="..\3rdPartyLibs\bin\sfml-window-d-2.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="game_state.h" />
-    <ClInclude Include="test_state.h" />
+    <ClInclude Include="main_menu.h" />
     <ClInclude Include="test_state2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

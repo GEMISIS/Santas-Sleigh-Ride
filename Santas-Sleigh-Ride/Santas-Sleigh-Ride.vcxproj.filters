@@ -27,10 +27,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_state.cpp">
+    <ClCompile Include="test_state2.cpp">
       <Filter>Source Files\States</Filter>
     </ClCompile>
-    <ClCompile Include="test_state2.cpp">
+    <ClCompile Include="main_menu.cpp">
       <Filter>Source Files\States</Filter>
     </ClCompile>
   </ItemGroup>
@@ -76,10 +76,13 @@
     <ClInclude Include="game_state.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="test_state.h">
+    <ClInclude Include="test_state2.h">
       <Filter>Header Files\States</Filter>
     </ClInclude>
-    <ClInclude Include="test_state2.h">
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="main_menu.h">
       <Filter>Header Files\States</Filter>
     </ClInclude>
   </ItemGroup>

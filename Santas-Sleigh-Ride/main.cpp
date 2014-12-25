@@ -1,5 +1,5 @@
 #include "game_state.h"
-#include "test_state.h"
+#include "main_menu.h"
 
 game_state* coreState;
 
@@ -8,7 +8,7 @@ int main()
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Santa's Sleigh Ride");
 
 	coreState = new game_state(&window);
-	coreState->SetState(new test_state());
+	coreState->SetState(new main_menu());
 
 	while (window.isOpen())
 	{
@@ -19,7 +19,11 @@ int main()
 				window.close();
 		}
 
+		window.clear(sf::Color::Black);
+
 		coreState->Update();
+
+		window.display();
 	}
 
 	return 0;
