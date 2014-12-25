@@ -1,6 +1,6 @@
 #include "game_state.h"
 
-class test_state : public tiny_state
+class test_state2 : public tiny_state
 {
 public:
 	void Initialize(sf::RenderWindow* window);
