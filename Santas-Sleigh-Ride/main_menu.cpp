@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main_menu.h"
-#include "test_state2.h"
+#include "main_game.h"
 
 void main_menu::Initialize(sf::RenderWindow* window)
 {
@@ -58,7 +58,7 @@ void main_menu::Update(sf::RenderWindow* window)
 		switch (this->selected)
 		{
 		case 0:
-			coreState->SetState(new test_state2());
+			coreState->SetState(new main_game());
 			break;
 		case 1:
 			exitGame = true;

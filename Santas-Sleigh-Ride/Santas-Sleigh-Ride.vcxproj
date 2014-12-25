@@ -70,7 +70,9 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_menu.cpp" />
-    <ClCompile Include="test_state2.cpp" />
+    <ClCompile Include="main_game.cpp" />
+    <ClCompile Include="Present.cpp" />
+    <ClCompile Include="Santa.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\3rdPartyLibs\bin\libsndfile-1.dll" />
@@ -88,9 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityManager.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="main_menu.h" />
-    <ClInclude Include="test_state2.h" />
+    <ClInclude Include="main_game.h" />
+    <ClInclude Include="Present.h" />
+    <ClInclude Include="Santa.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

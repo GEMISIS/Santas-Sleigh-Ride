@@ -22,16 +22,28 @@
     <Filter Include="Source Files\States">
       <UniqueIdentifier>{eccf4044-6e97-4f15-8f64-8c9b2404b94d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{f3456ca3-1fd2-417a-b64b-827b4a91d699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{53b75219-d8cd-4fba-b254-1e8590c77fd4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_state2.cpp">
-      <Filter>Source Files\States</Filter>
-    </ClCompile>
     <ClCompile Include="main_menu.cpp">
       <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="main_game.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Santa.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Present.cpp">
+      <Filter>Source Files\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,14 +88,23 @@
     <ClInclude Include="game_state.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="test_state2.h">
-      <Filter>Header Files\States</Filter>
-    </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="main_menu.h">
       <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="main_game.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Santa.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Present.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

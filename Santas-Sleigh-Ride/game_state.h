@@ -1,10 +1,12 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include "EntityManager.h"
 
 class tiny_state
 {
 public:
+	EntityManager manager;
 	virtual void Initialize(sf::RenderWindow* window)
 	{
 	}
@@ -57,8 +59,8 @@ public:
 			this->state->Destroy(this->window);
 		}
 	}
-private:
 	tiny_state* state;
+private:
 	sf::RenderWindow* window;
 };
 
