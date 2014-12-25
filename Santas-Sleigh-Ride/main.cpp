@@ -1,8 +1,10 @@
-#include <SFML/Window.hpp>
+#include "game_state.h"
+
+game_state* state;
 
 int main()
 {
-	sf::Window window(sf::VideoMode(800, 600), "Santa's Sleigh Ride");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "Santa's Sleigh Ride");
 
 	while (window.isOpen())
 	{
